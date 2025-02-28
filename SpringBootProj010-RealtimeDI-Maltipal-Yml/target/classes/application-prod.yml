@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: SpringBootProj-LayeredApp-ShowData
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: omkar
+    password: omkar
+    oracleucp:
+      initial-pool-size: 10
+      max-pool-size: 100

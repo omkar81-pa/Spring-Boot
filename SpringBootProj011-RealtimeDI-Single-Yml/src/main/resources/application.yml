@@ -1,0 +1,79 @@
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+spring:
+  profiles:
+    active: uat
+
+---
+
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+spring:
+  application:
+    name: SpringBootProj-LayeredApp-ShowData
+  datasource:
+    url: jdbc:mysql://localhost:3306/EmployeeDB
+    username: root
+    password: Omkar@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    dbcp2:
+      max-total: 100
+      min-idle: 10
+    type: org.apache.commons.dbcp2.BasicDataSource
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+
+---
+
+spring:
+  application:
+    name: SpringBootProj-LayeredApp-ShowData
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: omkar
+    password: omkar
+    oracleucp:
+      initial-pool-size: 10
+      max-pool-size: 100
+
+---
+
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+spring:
+  application:
+    name: SpringBootProj-LayeredApp-ShowData
+  datasource:
+    url: jdbc:mysql://localhost:3306/EmployeeDB
+    username: root
+    password: Omkar@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    c3p0:
+      minSize: 10
+      maxSize: 100
+    type: com.mchange.v2.c3p0.ComboPooledDataSource
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+
+---
+
+spring:
+  application:
+    name: SpringBootProj-LayeredApp-ShowData
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: omkar
+    password: omkar
+    oracleucp:
+      initial-pool-size: 10
+      max-pool-size: 100
+    type: oracle.ucp.jdbc.PoolDataSource

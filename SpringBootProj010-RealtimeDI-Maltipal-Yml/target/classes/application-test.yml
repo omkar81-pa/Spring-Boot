@@ -1,0 +1,19 @@
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+spring:
+  application:
+    name: SpringBootProj-LayeredApp-ShowData
+  datasource:
+    url: jdbc:mysql://localhost:3306/EmployeeDB
+    username: root
+    password: Omkar@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    c3p0:
+      minSize: 10
+      maxSize: 100
+    type: com.mchange.v2.c3p0.ComboPooledDataSource
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
