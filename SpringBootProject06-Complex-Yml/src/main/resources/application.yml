@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: SpringBootProject06-Complex-Yml  # Application name
+
+cust:
+  info:
+    custNo: 101  # Customer number
+    custName: Omkar  # Customer name
+    custAddrs: Hyderabad  # Customer address
+    billAmt: 5983.05  # Bill amount

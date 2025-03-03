@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: SpringBootProject06-Complex-Yml-1
+
+emp:
+  info:
+
+    empId: 101
+    empName: Omkar
+
+    #For Array property
+    color: [Red, Black, Blue, White, Green]
+#      - Red
+#      - Black
+#      - Blue
+#      - White
+
+    #for List Collection
+    nickName:
+      - Chinn
+      - Chhotu
+      - Kalu
+      - Lalu
+
+    # for Set Collection
+    mobileNo:
+      - 8969873547
+      - 7000859454
+      - 7777777777
+      - 7777777777
+
+    # For Map Collection
+    idDetails:
+      aadhar: 837465909323
+      voter: 234SDA34
+      panNo: 432JH67
+
+    #for HAS-A property
+    company: 
+      id: 3546
+      name: TCS
+      addrs: Hyderabad
+      size: 3000
